@@ -5,9 +5,9 @@ function BoardGame(amountCards) {
   const cardGame = CardGame();
   const boardGame = cardGame.repeat(amountCards);
 
-  return `
+  return /*html*/ `
     <section class="board-game">
-        ${boardGame}
+      ${boardGame}
     </section>
   `;
 }
