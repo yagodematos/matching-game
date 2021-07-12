@@ -11,8 +11,8 @@ const root = document.querySelector("#root");
 const playerScore1 = PlayerScore("Player 1");
 const PlayerScore2 = PlayerScore("Player 2");
 
-root.insertAdjacentHTML("beforeend", playerScore1);
-root.insertAdjacentHTML("beforeend", PlayerScore2);
+// root.insertAdjacentHTML("beforeend", playerScore1);
+// root.insertAdjacentHTML("beforeend", PlayerScore2);
 
 const boardGame = BoardGame(AMOUNT_CARDS);
-root.insertAdjacentElement("beforeend", boardGame);
+root.insertAdjacentHTML("beforeend", boardGame);

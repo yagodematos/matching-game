@@ -1,13 +1,15 @@
+import "./style.css";
 import CardGame from "../../components/CardGame";
 
 function BoardGame(amountCards) {
-  const boardGame = Array.from(Array(amountCards), () => CardGame());
+  const cardGame = CardGame();
+  const boardGame = cardGame.repeat(amountCards);
 
-  boardGame.forEach((element) => {
-    root.insertAdjacentHTML("beforeend", element);
-  });
-
-  return boardGame;
+  return `
+    <section class="board-game">
+        ${boardGame}
+    </section>
+  `;
 }
 
 export default BoardGame;
